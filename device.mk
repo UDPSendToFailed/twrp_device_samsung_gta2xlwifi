@@ -16,5 +16,5 @@
 # limitations under the License.
 #
 
-LOCAL_PATH := device/samsung/gta2xlwifi
+LOCAL_PATH := device/samsung/gta2xl
 

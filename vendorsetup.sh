@@ -16,5 +16,5 @@
 # limitations under the License.
 #
 
-add_lunch_combo omni_gta2xlwifi-userdebug
-add_lunch_combo omni_gta2xlwifi-eng
+add_lunch_combo omni_gta2xl-userdebug
+add_lunch_combo omni_gta2xl-eng

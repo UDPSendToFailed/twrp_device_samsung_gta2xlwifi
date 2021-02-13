@@ -17,4 +17,4 @@
 #
 
 PRODUCT_MAKEFILES := \
-     $(LOCAL_DIR)/omni_gta2xlwifi.mk
+     $(LOCAL_DIR)/omni_gta2xl.mk

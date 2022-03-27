@@ -18,3 +18,6 @@
 
 PRODUCT_MAKEFILES := \
      $(LOCAL_DIR)/omni_gta2xlwifi.mk
+	 
+COMMON_LUNCH_CHOICES := \
+	 omni_gta2xlwifi-eng

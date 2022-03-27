@@ -43,6 +43,7 @@ TARGET_OTA_ASSERT_DEVICE := gta2xlwifi
 TARGET_BOOTLOADER_BOARD_NAME := SRPRA23B003RU
 
 # File systems
+BOARD_RECOVERYIMAGE_PARTITION_SIZE := 33554432
 BOARD_HAS_LARGE_FILESYSTEM := true
 BOARD_SYSTEMIMAGE_PARTITION_TYPE := ext4
 BOARD_USERDATAIMAGE_FILE_SYSTEM_TYPE := ext4
@@ -87,7 +88,6 @@ TW_INCLUDE_CRYPTO_SAMSUNG := true
 TW_INCLUDE_FBE := true
 
 # TWRP Configuration
-W_DEVICE_VERSION := 2_LssWizard
 TW_THEME := portrait_hdpi
 TW_EXTRA_LANGUAGES := true
 TW_SCREEN_BLANK_ON_BOOT := true
@@ -105,30 +105,12 @@ TW_USE_TOOLBOX := true
 TW_INCLUDE_FUSE_NTFS := true
 TW_EXCLUDE_DEFAULT_USB_INIT := true
 TW_EXTRA_LANGUAGES := true
-TW_INPUT_BLACKLIST := "hbtp_vm" # disable cursor
+TW_INPUT_BLACKLIST := "hbtp_vm"
 TWRP_INCLUDE_LOGCAT := true
 TARGET_USES_LOGD := true
 TARGET_USES_MKE2FS := true
+TW_CUSTOM_CPU_TEMP_PATH := "/sys/class/thermal/thermal_zone10/temp"
 
 # LZMA ramdisk compression
 LZMA_RAMDISK_TARGETS := recovery
 LZMA_COMPRESSION := -9
-
-# NOTE - Dont use '-' or blank spaces in flag values , otherwise it will create build errors or other bugs in recovery (Excluding SHRP_PATH,SHRP_REC). 
-# Path of your SHRP Tree
-SHRP_PATH := device/samsung/gta2xlwifi
-# Maintainer name *
-SHRP_MAINTAINER := Lsswizard
-# Device codename *
-SHRP_DEVICE_CODE := gta2xlwifi
-SHRP_REC_TYPE := Treble
-SHRP_DEVICE_TYPE := A/B
-SHRP_EDL_MODE := 0
-SHRP_DARK := true
-SHRP_EXPRESS := true
-SHRP_EXTERNAL := /external_sd
-SHRP_INTERNAL := /sdcard
-SHRP_OTG := /usb_otg
-SHRP_FLASH := 1
-SHRP_REC := /dev/block/bootdevice/by-name/recovery 
-

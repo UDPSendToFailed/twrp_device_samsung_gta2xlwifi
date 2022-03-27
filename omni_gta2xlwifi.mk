@@ -5,7 +5,7 @@ PRODUCT_RELEASE_NAME := gta2xlwifi
 $(call inherit-product, $(SRC_TARGET_DIR)/product/aosp_base.mk)
 
 # Inherit from our custom product configuration
-$(call inherit-product, vendor/omni/config/common.mk)
+$(call inherit-product, device/samsung/gta2xlwifi/device.mk)
 
 
 # Device identifier. This must come after all inclusions

@@ -17,7 +17,6 @@
 #
 
 PRODUCT_MAKEFILES := \
-     $(LOCAL_DIR)/omni_gta2xlwifi.mk
+     $(LOCAL_DIR)/twrp_gta2xlwifi.mk
 	 
-COMMON_LUNCH_CHOICES := \
-	 omni_gta2xlwifi-eng
+COMMON_LUNCH_CHOICES := twrp_gta2xlwifi-eng

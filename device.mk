@@ -25,6 +25,10 @@ PRODUCT_PACKAGES += \
     qcom_decrypt \
     qcom_decrypt_fbe
 
+# Health HAL
+PRODUCT_PACKAGES += \
+    android.hardware.health@2.1-impl.recovery
+
 # PLATFORM
 PLATFORM_VERSION := 99.87.36
 PLATFORM_SECURITY_PATCH := 2127-12-31

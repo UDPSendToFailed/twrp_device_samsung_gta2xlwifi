@@ -20,6 +20,9 @@ PRODUCT_PACKAGES += \
     qcom_decrypt \
     qcom_decrypt_fbe
 
+PRODUCT_PROPERTY_OVERRIDES += \
+    keymaster_ver=4.x
+
 # Health HAL
 PRODUCT_PACKAGES += \
     android.hardware.health@2.1-impl.recovery
